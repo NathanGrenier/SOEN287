@@ -1,0 +1,23 @@
+span.red {
+  color: red;
+  font-weight: bold;
+}
+
+div {
+  padding: 5px;
+  margin: auto;
+  border-color: green;
+  border-style: dotted;
+  border-width: 2px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+
+#second {
+  top: 50px;
+  right: 150px;
+}
