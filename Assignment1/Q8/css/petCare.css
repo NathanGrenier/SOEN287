@@ -1,0 +1,43 @@
+.content {
+    flex-direction: column;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 25%;
+}
+
+.information-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 75%;
+}
+
+.information-item {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 33%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.information-item img {
+    max-width: 90%;
+    border-radius: 10px;    
+}
+
+.information-item h2 {
+    font-size: 2em;
+}
+
+.title {
+    font-size: 3em;
+    color:rgb(0, 0, 0);
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Adopt a Dog/Cat</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/findAPet.css">
+    <link rel="stylesheet" href="../css/form.css">
   </head>
   <body>
     <header>
@@ -40,7 +40,7 @@
                 </div>
                 <div class="form-row">
                     <div class="form-column">
-                        <div class="form-item">
+                        <div class="form-item horizontal-items">
                             <label for="dogBreed">Breed of Dog</label>
                             <select id="dogBreed" name="dogBreed">
                                 <option>German Shepard</option>
@@ -52,7 +52,7 @@
                                 <option>French Bulldog</option>
                             </select>
                         </div>
-                        <div class="form-item">
+                        <div class="form-item horizontal-items">
                             <label for="dogAge">Prefered Age</label>
                             <select id="dogAge" name="dogAge">
                                 <option>Puppy</option>
@@ -65,23 +65,23 @@
                         </div>
                     </div>
                     <div class="form-column">
+                        <h3>Preffered Gender:</h3>
                         <div class="form-item vertical-items">
-                            <legend>Preffered Gender:</legend>
-                            <label for="male"><input type="radio" id="male" name="gender">Male</label>
-                            <label for="female"><input type="radio" id="female" name="gender">Female</label>
-                            <label for="N/A"><input type="radio" id="N/A" name="gender">N/A</label>
+                            <label for="male_dog"><input type="radio" id="male_dog" name="gender">Male</label>
+                            <label for="female_dog"><input type="radio" id="female_dog" name="gender">Female</label>
+                            <label for="Dosen't_Matter_dog"><input type="radio" id="Dosen't_Matter_dog" name="gender">Dosen't Matter</label>
                         </div>
                         <div class="form-item vertical-items">
-                            <legend>Temperment:</legend>
-                            <label for="mild"><input type="radio" id="mild" name="temperment">Mild</label>
-                            <label for="agressive"><input type="radio" id="agressive" name="temperment">Agressive</label>
+                            <h3>Temperment:</h3>
+                            <label for="mild_dog"><input type="radio" id="mild_dog" name="temperment">Mild</label>
+                            <label for="agressive_dog"><input type="radio" id="agressive_dog" name="temperment">Agressive</label>
                         </div>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="submit">
-                        <input type="submit" id="submit" name="submit">
-                        <input type="reset" id="reset" name="reset">
+                        <input type="submit" id="submit_dog" name="submit">
+                        <input type="reset" id="reset_dog" name="reset">
                     </div>
                 </div>
             </form>
@@ -117,22 +117,22 @@
                     </div>
                     <div class="form-column">
                         <div class="form-item vertical-items">
-                            <legend>Preffered Gender:</legend>
-                            <label for="male"><input type="radio" id="male" name="gender">Male</label>
-                            <label for="female"><input type="radio" id="female" name="gender">Female</label>
-                            <label for="N/A"><input type="radio" id="N/A" name="gender">N/A</label>
+                            <h3>Preffered Gender:</h3>
+                            <label for="male_cat"><input type="radio" id="male_cat" name="gender">Male</label>
+                            <label for="female_cat"><input type="radio" id="female_cat" name="gender">Female</label>
+                            <label for="Dosen't_Matter_cat"><input type="radio" id="Dosen't_Matter_cat" name="gender">Dosen't Matter</label>
                         </div>
                         <div class="form-item vertical-items">
-                            <legend>Temperment:</legend>
-                            <label for="mild"><input type="radio" id="mild" name="temperment">Mild</label>
-                            <label for="agressive"><input type="radio" id="agressive" name="temperment">Agressive</label>
+                            <h3>Temperment:</h3>
+                            <label for="mild_cat"><input type="radio" id="mild_cat" name="temperment">Mild</label>
+                            <label for="agressive_cat"><input type="radio" id="agressive_cat" name="temperment">Agressive</label>
                         </div>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="submit">
-                        <input type="submit" id="submit" name="submit">
-                        <input type="reset" id="reset" name="reset">
+                        <input type="submit" id="submit_cat" name="submit">
+                        <input type="reset" id="reset_cat" name="reset">
                     </div>
                 </div>
             </form>
@@ -148,7 +148,7 @@
         </div>
       </div>
     </footer>
+    <script src="../js/popup.js"></script>
+    <script src="../js/findAPet.js"></script>
   </body>
-  <script src="../js/popup.js"></script>
-  <script src="../js/findAPet.js"></script>
 </html>
