@@ -16,6 +16,7 @@
     justify-content: space-around;
     align-items: center;
     flex-basis: 75%;
+    gap: 3em;
 }
 
 .information-item {
@@ -23,13 +24,13 @@
     flex-direction: column;
     flex-grow: 1;
     flex-shrink: 0;
-    flex-basis: 33%;
+    flex-basis: 30%;
     justify-content: space-around;
     align-items: center;
 }
 
 .information-item img {
-    max-width: 90%;
+    max-width: 100%;
     border-radius: 10px;    
 }
 
