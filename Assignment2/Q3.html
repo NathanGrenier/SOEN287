@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Question 3</title>
+    </head>
+    <body>
+        <h1>Javascript Functions</h1>
+        <h2>Add Numbers:</h2>
+        <p id="1"></p>
+
+        <h2>Find Max Number:</h2>
+        <p id="2"></p>
+
+        <h2>Add Only Numbers:</h2>
+        <p id="3"></p>
+
+        <h2>Get Digits:</h2>
+        <p id="4"></p>
+
+        <h2>Reverse String:</h2>
+        <p id="5"></p>
+
+        <h2>Current Date:</h2>
+        <p id="6"></p>
+        
+        <script src="Q3.js"></script>
+        <script>
+            document.getElementById("1").innerHTML = addNumbers([1,2,3,4,5]);
+            document.getElementById("2").innerHTML = findMaxNumber([1,2,3,4,5]);
+            document.getElementById("3").innerHTML = addOnlyNumbers([4, 5, "3.0 birds", true, "birds2"])
+            document.getElementById("4").innerHTML = getDigits("asdfyuig1269g-0");
+            document.getElementById("5").innerHTML = reverseString("See you later");
+            document.getElementById("6").innerHTML = getCurrentDate();
+            
+        </script>
+    </body>
+</html>

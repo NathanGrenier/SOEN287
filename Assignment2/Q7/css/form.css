@@ -1,0 +1,115 @@
+.tabs {
+    border: 1px solid #cccccc;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.tabs-topbar {
+    flex-shrink: 0;
+    background: #cccccc;
+}
+
+.tabs-topbar h2 {
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tabs-button {
+    padding: 10px;
+    background: #eeeeee;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.tabs-button:active {
+    background: #dddddd;
+}
+
+.tab-button:not(:last-of-type) {
+    border-bottom: 1px solid #cccccc;
+}
+
+.tabs-button-active {
+    font-weight: bold;
+    border-top: 2px solid #009879;
+    background: #dddddd;
+}
+
+.tabs-content {
+    padding: 15px;
+    font-size: 0.8rem;
+    display: none;
+    flex-direction: column;
+    background-color: beige;
+    border-radius: 3px;
+    padding: 1em;
+    flex-grow: 1;
+}
+
+.tabs-content-active {
+    display: flex;
+}
+
+.tabs-content > :first-child {
+    margin-top: 0px;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    justify-content: space-around;
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.form-item > label{
+    font-size: 16px;
+    margin-right: 0.5em;
+    padding: 0.5em 0;
+}
+
+.form-item select, .form-item input{
+    flex: 6;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+form h3 {
+    font-size: 16px;
+}
+
+.horizontal-items {
+    display: flex;
+    justify-content:space-between;
+}
+
+.vertical-items {
+    padding-bottom: 1em;
+}
+
+.vertical-items > label {
+    display: block;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.submit input{
+    padding: 1em; 
+    margin: 5px;
+    background: gray;
+    color: white;
+    border: 0; 
+    cursor: pointer;
+}
