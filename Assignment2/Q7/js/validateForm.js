@@ -6,6 +6,10 @@ function isEmpty(value) {
 } 
 
 function validEmail(email) {
+    /*
+        More Stric version from https://www.w3resource.com/javascript/form/email-validation.php:
+        /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+    */
     let validEmailRegex = /^[\w\-\.\_]+\@([\w\-]+\.)+[\w\-]{2,}$/gm;
     if (email.match(validEmailRegex)) {
         return true;
