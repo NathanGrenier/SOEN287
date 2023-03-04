@@ -8,13 +8,22 @@
   </head>
   <body>
     <header>
-      <div class="logo-container">
-        <a href="../index.html"><img alt="Logo" src="../Pictures/logo.png"></a>
-      </div>
-      <div class="title-container">
-        <h1>Animal Lover's Dog and Cat Adoption Center</h1>
-      </div>
-    </header>
+        <div class="nav-container">
+          <div class="logo-container">
+            <a href="index.html"><img alt="Logo" src="../Pictures/logo.png"></a>
+          </div>
+          <div class="title-container">
+            <h1>Animal Lover's Dog and Cat Adoption Center</h1>
+          </div>
+        </div>
+        <div class="nav-container">
+          <div class="date-container">
+            <h3 id="currentDate"></h3>
+            <h3 id="currentTime"></h3>
+          </div>
+        </div>
+        <script src="../js/doDate.js"></script>
+      </header>
     <main>
       <nav>
         <a class="non-active" href="../index.html">Home</a>
@@ -42,7 +51,7 @@
                     <div class="form-column">
                         <div class="form-item horizontal-items">
                             <label for="dogBreed">Breed of Dog</label>
-                            <select id="dogBreed" name="dogBreed">
+                            <select id="dogBreed" name="breed">
                                 <option>German Shepard</option>
                                 <option>Poodle</option>
                                 <option>Bulldog</option>
@@ -54,7 +63,7 @@
                         </div>
                         <div class="form-item horizontal-items">
                             <label for="dogAge">Prefered Age</label>
-                            <select id="dogAge" name="dogAge">
+                            <select id="dogAge" name="age">
                                 <option>Puppy</option>
                                 <option>2-4 years</option>
                                 <option>5-8 years</option>
@@ -66,15 +75,36 @@
                     </div>
                     <div class="form-column">
                         <h3>Preffered Gender:</h3>
-                        <div class="form-item vertical-items">
-                            <label for="male_dog"><input type="radio" id="male_dog" name="gender">Male</label>
-                            <label for="female_dog"><input type="radio" id="female_dog" name="gender">Female</label>
-                            <label for="Dosen't_Matter_dog"><input type="radio" id="Dosen't_Matter_dog" name="gender">Dosen't Matter</label>
+                        <div class="form-item">
+                            <div class="vertical-items-container">
+                              <div class="item">
+                                <label for="male_dog">Male</label>
+                                <input type="radio" id="male_dog" name="gender">
+                              </div>
+                              <div class="item">
+                                <label for="female_dog">Female</label>
+                                <input type="radio" id="female_dog" name="gender">
+                              </div>
+                              <div class="item">
+                                <label for="Dosen't_Matter_dog">Dosen't Matter</label>
+                                <input type="radio" id="Dosen't_Matter_dog" name="gender">
+                              </div>
+                              <div class="error"></div>
+                            </div>  
                         </div>
-                        <div class="form-item vertical-items">
+                        <div class="form-item">
+                          <div class="vertical-items-container">
                             <h3>Temperment:</h3>
-                            <label for="mild_dog"><input type="radio" id="mild_dog" name="temperment">Mild</label>
-                            <label for="agressive_dog"><input type="radio" id="agressive_dog" name="temperment">Agressive</label>
+                            <div class="item">
+                              <label for="mild_dog">Mild</label>
+                              <input type="radio" id="mild_dog" name="temperment">
+                            </div>
+                            <div class="item">
+                              <label for="agressive_dog">Agressive</label>
+                              <input type="radio" id="agressive_dog" name="temperment">
+                            </div>
+                            <div class="error"></div>
+                          </div>
                         </div>
                     </div>
                 </div>
@@ -93,7 +123,7 @@
                     <div class="form-column">
                         <div class="form-item">
                             <label for="catBreed">Breed of Cat</label>
-                            <select id="catBreed" name="catBreed">
+                            <select id="catBreed" name="breed">
                                 <option>Maine Coon</option>
                                 <option>Persian</option>
                                 <option>Siamese</option>
@@ -105,7 +135,7 @@
                         </div>
                         <div class="form-item">
                             <label for="catAge">Prefered Age</label>
-                            <select id="catAge" name="catAge">
+                            <select id="catAge" name="age">
                                 <option>Kitten</option>
                                 <option>2-4 years</option>
                                 <option>5-8 years</option>
@@ -116,16 +146,37 @@
                         </div>
                     </div>
                     <div class="form-column">
-                        <div class="form-item vertical-items">
+                        <div class="form-item">
+                          <div class="vertical-items-container">
                             <h3>Preffered Gender:</h3>
-                            <label for="male_cat"><input type="radio" id="male_cat" name="gender">Male</label>
-                            <label for="female_cat"><input type="radio" id="female_cat" name="gender">Female</label>
-                            <label for="Dosen't_Matter_cat"><input type="radio" id="Dosen't_Matter_cat" name="gender">Dosen't Matter</label>
+                            <div class="item">
+                              <label for="male_cat">Male</label>
+                              <input type="radio" id="male_cat" name="gender">
+                            </div>
+                            <div class="item">
+                              <label for="female_cat">Female</label>
+                              <input type="radio" id="female_cat" name="gender">
+                            </div>
+                            <div class="item">
+                              <label for="Dosen't_Matter_cat">Dosen't Matter</label>
+                              <input type="radio" id="Dosen't_Matter_cat" name="gender">
+                            </div>
+                            <div class="error"></div>
+                          </div>  
                         </div>
-                        <div class="form-item vertical-items">
+                        <div class="form-item">
+                          <div class="vertical-items-container">
                             <h3>Temperment:</h3>
-                            <label for="mild_cat"><input type="radio" id="mild_cat" name="temperment">Mild</label>
-                            <label for="agressive_cat"><input type="radio" id="agressive_cat" name="temperment">Agressive</label>
+                            <div class="item">
+                              <label for="mild_cat">Mild</label>
+                              <input type="radio" id="mild_cat" name="temperment">
+                            </div>
+                            <div class="item">
+                              <label for="agressive_cat">Agressive</label>
+                              <input type="radio" id="agressive_cat" name="temperment">                              
+                            </div>
+                            <div class="error"></div>
+                          </div>  
                         </div>
                     </div>
                 </div>
@@ -150,5 +201,6 @@
     </footer>
     <script src="../js/popup.js"></script>
     <script src="../js/findAPet.js"></script>
+    <script src="../js/validateForm.js"></script>
   </body>
 </html>

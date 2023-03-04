@@ -88,21 +88,24 @@
 
 form h3 {
     font-size: 16px;
+    text-align: center;
 }
 
-.horizontal-items {
+.vertical-items-container {
     display: flex;
-    justify-content:space-between;
+    flex-direction: column;
 }
 
-.vertical-items {
-    padding-bottom: 1em;
+.item {
+    font-size: 16px;
 }
 
-.vertical-items > label {
-    display: block;
-    padding-bottom: 0;
-    padding-top: 0;
+.item > label {
+    float: left;
+}
+
+.item > input {
+    float: right;
 }
 
 .submit input{
@@ -112,4 +115,14 @@ form h3 {
     color: white;
     border: 0; 
     cursor: pointer;
+}
+
+.error {
+    color: red;
+    display: none;
+    text-align: center;
+}
+
+.visible {
+    display: block;
 }
