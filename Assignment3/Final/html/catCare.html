@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Adopt a Dog/Cat</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/petCare.css">
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <div class="logo-container">
+          <a href="index.html"><img alt="Logo" src="../Pictures/logo.png"></a>
+        </div>
+        <div class="title-container">
+          <h1>Animal Lover's Dog and Cat Adoption Center</h1>
+        </div>
+      </div>
+      <div class="nav-container">
+        <div class="date-container">
+          <h3 id="currentDate"></h3>
+          <h3 id="currentTime"></h3>
+        </div>
+      </div>
+      <script src="../js/doDate.js"></script>
+    </header>
+    <main>
+      <nav>
+        <a class="non-active" href="../index.html">Home</a>
+        <a class="non-active" href="browsePets.html">Browse Pets</a>
+        <a class="non-active" href="findAPet.html">Find a Dog/Cat</a>
+        <a class="non-active" href="dogCare.html">Dog Care</a>
+        <a class="active" href="catCare.html">Cat Care</a>
+        <a class="non-active" href="giveAwayPet.html">Give Away a Pet</a>
+        <a class="non-active" href="contact.html">Contact Us</a>
+      </nav>
+      <div class="content">
+        <div class="title-container">
+            <h2 class="title">Useful Information to Know about Cats</h2>
+        </div>
+        <div class="information-container">
+            <div class="information-item">
+                <a href="https://icatcare.org/advice/thinking-of-getting-a-cat/" target="_blank"><img alt="Cat Care" src="../Pictures/catCare.jpg"></a>
+                <h2>How to Care for Cats</h2>
+            </div>
+            <div class="information-item">
+                <a href="https://www.aspca.org/pet-care/cat-care/common-cat-behavior-issues" target="_blank"><img alt="Cat Behavior" src="../Pictures/catBehavior.jpg"></a>
+                <h2>Cat Behavior</h2>
+            </div>
+            <div class="information-item">
+                <a href="https://www.aspca.org/pet-care/cat-care/cat-nutrition-tips" target="_blank"><img alt="Cat Diet" src="../Pictures/catEating.webp"></a>
+                <h2>Cat Diet</h2>
+            </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <a class="open-popup" onclick="openPopup()">View Privacy Statment</a>
+      <div class="popup" id="popup">
+        <button type="button" onclick="closePopup()">X</button>
+        <div class="text">
+          <p>Your information will not be sold or misused. Any information posted by the pet owner is their responsibility.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/popup.js"></script>
+  </body>
+</html>
