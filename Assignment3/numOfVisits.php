@@ -1,10 +1,10 @@
 <?php
 if (!isset($_COOKIE["lastVisit"])) {
-    setcookie("lastVisit", date("l, F j, H:i:s e Y"), time() + (86400 * 30), "/");
+    setcookie("lastVisit", date("l, F jS, H:i:s T Y"), time() + (86400 * 30), "/");
     setcookie("visitCount", 2, time() + (86400 * 30), "/"); // 86400 = 1 day
 } else {
     $lastVisit = $_COOKIE["lastVisit"];
-    setcookie("lastVisit", date("l, F j, H:i:s e Y"), time() + (86400 * 30), "/");
+    setcookie("lastVisit", date("l, F jS, H:i:s T Y"), time() + (86400 * 30), "/");
     setcookie("visitCount", $_COOKIE["visitCount"] + 1, time() + (86400 * 30), "/"); // 86400 = 1 day     
 }
 ?>
