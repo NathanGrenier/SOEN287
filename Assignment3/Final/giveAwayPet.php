@@ -3,36 +3,20 @@
   <head>
     <meta charset="UTF-8">
     <title>Adopt a Dog/Cat</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
   </head>
   <body>
-    <header>
-        <div class="nav-container">
-          <div class="logo-container">
-            <a href="index.html"><img alt="Logo" src="../Pictures/logo.png"></a>
-          </div>
-          <div class="title-container">
-            <h1>Animal Lover's Dog and Cat Adoption Center</h1>
-          </div>
-        </div>
-        <div class="nav-container">
-          <div class="date-container">
-            <h3 id="currentDate"></h3>
-            <h3 id="currentTime"></h3>
-          </div>
-        </div>
-        <script src="../js/doDate.js"></script>
-      </header>
+    <?php require "php/header.php"?>
     <main>
       <nav>
-        <a class="non-active" href="../index.html">Home</a>
-        <a class="non-active" href="browsePets.html">Browse Pets</a>
-        <a class="non-active" href="findAPet.html">Find a Dog/Cat</a>
-        <a class="non-active" href="dogCare.html">Dog Care</a>
-        <a class="non-active" href="catCare.html">Cat Care</a>
-        <a class="active" href="giveAwayPet.html">Give Away a Pet</a>
-        <a class="non-active" href="contact.html">Contact Us</a>
+        <a class="non-active" href="index.php">Home</a>
+        <a class="non-active" href="browsePets.php">Browse Pets</a>
+        <a class="non-active" href="findAPet.php">Find a Dog/Cat</a>
+        <a class="non-active" href="dogCare.php">Dog Care</a>
+        <a class="non-active" href="catCare.php">Cat Care</a>
+        <a class="active" href="giveAwayPet.php">Give Away a Pet</a>
+        <a class="non-active" href="contact.php">Contact Us</a>
       </nav>
       <div class="content">
         <div class="tabs">
@@ -272,17 +256,8 @@
         </div>
       </div>
     </main>
-    <footer>
-      <a class="open-popup" onclick="openPopup()">View Privacy Statment</a>
-      <div class="popup" id="popup">
-        <button type="button" onclick="closePopup()">X</button>
-        <div class="text">
-          <p>Your information will not be sold or misused. Any information posted by the pet owner is their responsibility.</p>
-        </div>
-      </div>
-    </footer>
-    <script src="../js/popup.js"></script>
-    <script src="../js/findAPet.js"></script>
-    <script src="../js/validateForm.js"></script>
+    <?php require "php/footer.php"?>
+    <script src="js/findAPet.js"></script>
+    <script src="js/validateForm.js"></script>
   </body>
 </html>

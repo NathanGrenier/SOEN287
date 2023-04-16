@@ -50,7 +50,7 @@ function validateFormInputs() {
         setSuccess(gender[0]);
     }
     
-    if (page === "giveAwayPet.html") {
+    if (page === "giveAwayPet.php") {
         const comments = activeForm.elements["comments"];
         const name = activeForm.elements["name"];
         const email = activeForm.elements["email"];
@@ -85,7 +85,7 @@ function validateFormInputs() {
         } else {
             setError(email, "Invalid Email Address");
         }
-    } else if (page === "findAPet.html") {
+    } else if (page === "findAPet.php") {
         if (isEmpty(temperment.value)) {
             setError(temperment[0], "Temperment is Requiered");
         } else {

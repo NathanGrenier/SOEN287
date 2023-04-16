@@ -5,7 +5,7 @@ if (!isset($_COOKIE["lastVisit"])) {
 } else {
     $lastVisit = $_COOKIE["lastVisit"];
     setcookie("lastVisit", date("l, F jS, H:i:s T Y"), time() + (86400 * 30), "/");
-    setcookie("visitCount", $_COOKIE["visitCount"] + 1, time() + (86400 * 30), "/"); // 86400 = 1 day     
+    setcookie("visitCount", $_COOKIE["visitCount"] + 1, time() + (86400 * 30), "/"); // 86400 = 1 day
 }
 ?>
 <!DOCTYPE html>
