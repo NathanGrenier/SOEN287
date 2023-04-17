@@ -100,10 +100,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const forms = document.forms;
 
     for (const element of forms) {
+        // Skip the logout form
+        if (element.className === "logout") {
+            continue;
+        }
         element.addEventListener("submit", e => {
-            e.preventDefault()
-
-            validateFormInputs();
+            if (validateFormInputs()) {
+                e.preventDefault()
+            }
         });
     }});
 

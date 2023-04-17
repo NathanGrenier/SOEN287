@@ -8,6 +8,11 @@ echo '
   <div class="title-container">
     <h1>Animal Lover\'s Dog and Cat Adoption Center</h1>
   </div>
+  <div class="login-container">
+    <form class="logout" method="post" action="php/logout.php">
+      <button class="button" type="submit" name="logout">Logout</button>
+    </form>
+  </div>
 </div>
 <div class="nav-container">
   <div class="date-container">

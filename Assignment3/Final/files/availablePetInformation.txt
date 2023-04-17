@@ -1,0 +1,10 @@
+1:nathan:dog:German Shepard:Puppy:male:dogCompatible:Nothing to add
+2:sosepih619:cat:Maine Coon:Kitten:male:dogCompatible:Nothing to add
+3:sosepih619:dog:German Shepard:5-8 years:female:dogCompatible:Nothing to add
+4:sosepih619:dog:German Shepard:Puppy:dosen't matter:dogCompatible:Nothing to add
+5:Gridfinity:dog:German Shepard:Puppy:male:dogCompatible:Nothing to add
+6:nathan:dog:German Shepard:Puppy:male:dogCompatible:Nothing to add
+7:nathan:dog:German Shepard:Puppy:male:dogCompatible:Nothing to add
+8:nathan:cat:Ragdoll:Kitten:male:dogCompatible:Nothing to add
+9:nathan:cat:Siamese:Kitten:male:dogCompatible:Nothing to add
+10:nathan:cat:Siamese:Kitten:male:dogCompatible:Nothing to add

@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,6 +20,7 @@
         <a class="non-active" href="catCare.php">Cat Care</a>
         <a class="non-active" href="giveAwayPet.php">Give Away a Pet</a>
         <a class="non-active" href="contact.php">Contact Us</a>
+        <a class="non-active" href="register.php">Register</a>
       </nav>
       <div class="content">
         <div class="text-box">
