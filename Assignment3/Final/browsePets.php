@@ -33,14 +33,25 @@ session_start();
       <div class="content">
         <?php
           if (isset($_GET["animal"])) {
+            $matchFound = false;
             $filename = "files/availablePetInformation.txt";
-
             $read = fopen($filename, "r") or die("Unable to open file!");
         
             // Loop through each line in the file.
             while (($line = fgets($read)) !== false) {
                 $lineArray = explode(":", $line);
-                if ($lineArray[3] === $_GET["breed"] && $lineArray[4] === $_GET["age"] && $lineArray[5] === $_GET["gender"]) {
+                
+                $breed = strtolower($lineArray[3]);
+                $age = strtolower($lineArray[4]);
+                $gender = strtolower($lineArray[5]);
+                $temperment = explode(" ", $lineArray[6]);
+                $temperment_out = "";
+                for ($i=0; $i < count($temperment); $i++) {
+                  $temperment[$i] = str_replace("_", " ", $temperment[$i]);
+                  $temperment_out .= $temperment[$i] . "<br>";
+                }
+                if ($breed === strtolower($_GET["breed"]) && $age === strtolower($_GET["age"]) && $gender ===  strtolower($_GET["gender"])) {
+                  $matchFound = true;
                   echo '
                   <div class="pet-container">
                     <img src="Pictures/' . $lineArray[3] . '.webp" alt="">
@@ -61,7 +72,7 @@ session_start();
                         </div>
                         <div class="category">
                           <div class="title">Temperment: </div>
-                          <div class="information">'. $lineArray[6] .'</div>
+                          <div class="information">'. $temperment_out .'</div>
                         </div>
                         <div class="category">
                           <div class="additional-information-container">
@@ -77,6 +88,11 @@ session_start();
                   </div>
                   ';
                 }
+            }
+            if (!$matchFound) {
+              echo '<div class="title-container">
+                      <h2 class="title" style="font-size: 3em;">No Match Found. <a href="findAPet.php">Try Again</a></h2>
+                    </div>';
             }
           } else {
             echo '<div class="title-container">

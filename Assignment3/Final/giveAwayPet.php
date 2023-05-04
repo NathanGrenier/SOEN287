@@ -72,15 +72,15 @@ session_start();
                                     <h3>Gender:</h3>
                                     <div class="item">
                                         <label for="male_dog">Male</label>
-                                        <input type="radio" id="male_dog" name="gender" value="male">
+                                        <input type="radio" id="male_dog" name="gender" value="Male">
                                     </div>
                                     <div class="item">
                                         <label for="female_dog">Female</label>
-                                        <input type="radio" id="female_dog" name="gender" value="female">
+                                        <input type="radio" id="female_dog" name="gender" value="Female">
                                     </div>
                                     <div class="item">
                                         <label for="Dosen't_Matter_dog">Dosen't Matter</label>
-                                        <input type="radio" id="Dosen't_Matter_dog" name="gender" value="dosen't matter">
+                                        <input type="radio" id="Dosen't_Matter_dog" name="gender" value="Dosen't matter">
                                     </div>
                                     <div class="error"></div>
                                 </div>
@@ -90,15 +90,15 @@ session_start();
                                     <h3>Temperment:</h3>
                                     <div class="item">
                                         <label for="dogCompatible_dog">Gets Along with Other Dogs</label>
-                                        <input type="checkbox" id="dogCompatible_dog" name="temperment[]" value="dogCompatible">
+                                        <input type="checkbox" id="dogCompatible_dog" name="temperment[]" value="Dog_Compatible">
                                     </div>
                                     <div class="item">
                                         <label for="catCompatible_dog">Gets Along with Other Cats</label>
-                                        <input type="checkbox" id="catCompatible_dog" name="temperment[]" value="catCompatible">
+                                        <input type="checkbox" id="catCompatible_dog" name="temperment[]" value="Cat_Compatible">
                                     </div>
                                     <div class="item">
                                         <label for="familyCompatible_dog">Suitable for Family and Children</label>
-                                        <input type="checkbox" id="familyCompatible_dog" name="temperment[]" value="familyCompatible">
+                                        <input type="checkbox" id="familyCompatible_dog" name="temperment[]" value="Family_Compatible">
                                     </div>
                                     <div class="error"></div>
                                 </div>
@@ -185,15 +185,15 @@ session_start();
                                     <h3>Gender:</h3>
                                     <div class="item">
                                         <label for="male_cat">Male</label>
-                                        <input type="radio" id="male_cat" name="gender" value="male">
+                                        <input type="radio" id="male_cat" name="gender" value="Male">
                                     </div>
                                     <div class="item">
                                         <label for="female_cat">Female</label>
-                                        <input type="radio" id="female_cat" name="gender" value="female">
+                                        <input type="radio" id="female_cat" name="gender" value="Female">
                                     </div>
                                     <div class="item">
                                         <label for="Dosen't_Matter_cat">Dosen't Matter</label>
-                                        <input type="radio" id="Dosen't_Matter_cat" name="gender" value="dosen't matter">
+                                        <input type="radio" id="Dosen't_Matter_cat" name="gender" value="Dosen't matter">
                                     </div>
                                     <div class="error"></div>
                                 </div>
@@ -203,15 +203,15 @@ session_start();
                                     <h3>Temperment:</h3>
                                     <div class="item">
                                         <label for="dogCompatible_cat">Gets Along with Other Dogs</label>
-                                        <input type="checkbox" id="dogCompatible_cat" name="temperment[]" value="dogCompatible">
+                                        <input type="checkbox" id="dogCompatible_cat" name="temperment[]" value="Dog_Compatible">
                                     </div>
                                     <div class="item">
                                         <label for="catCompatible_cat">Gets Along with Other Cats</label>
-                                        <input type="checkbox" id="catCompatible_cat" name="temperment[]" value="catCompatible">
+                                        <input type="checkbox" id="catCompatible_cat" name="temperment[]" value="Cat_Compatible">
                                     </div>
                                     <div class="item">
                                         <label for="familyCompatible_cat">Suitable for Family and Children</label>
-                                        <input type="checkbox" id="familyCompatible_cat" name="temperment[]" value="familyCompatible">
+                                        <input type="checkbox" id="familyCompatible_cat" name="temperment[]" value="Family_Compatible">
                                     </div>
                                     <div class="error"></div>
                                 </div>
@@ -236,7 +236,7 @@ session_start();
                         <div class="form-column">
                             <div class="form-item">
                                 <div class="vertical-items-container">
-                                    <div class="item">
+                                    <div class="form-item">
                                         <label for="owner-name_cat">Name (First and Last)</label>
                                         <input type="text" id="owner-name_cat" name="name">
                                     </div>

@@ -42,10 +42,12 @@ function validateFormInputs() {
     const page = getPage();
 
     const gender = activeForm.elements["gender"];
-    const temperment = activeForm.elements["temperment"];
+
+    let valid = true;
 
     if (isEmpty(gender.value)) {
         setError(gender[0], "Breed is Requiered");
+        valid = false;
     } else {
         setSuccess(gender[0]);
     }
@@ -54,6 +56,7 @@ function validateFormInputs() {
         const comments = activeForm.elements["comments"];
         const name = activeForm.elements["name"];
         const email = activeForm.elements["email"];
+        const temperment = activeForm.elements["temperment[]"];
 
         for (let i=0; i < temperment.length; i++) {
             if (temperment[i].checked) {
@@ -62,50 +65,55 @@ function validateFormInputs() {
             } else {
                 if (i === temperment.length - 1) {
                     setError(temperment[0], "At Least 1 Temperment is Requiered")
+                    valid = false;
                 }
             }
         }
 
         if (isEmpty(comments.value)) {
             setError(comments, "More Information is Requiered");
+            valid = false;
         } else {
             setSuccess(comments);
         }
 
         if (isEmpty(name.value)) {
             setError(name, "More Information is Requiered");
+            valid = false;
         } else {
             setSuccess(name);
         }
 
         if (isEmpty(email.value)) {
             setError(email, "More Information is Requiered");
+            valid = false;
         } else if (validEmail(email.value)) {
             setSuccess(email);
         } else {
             setError(email, "Invalid Email Address");
+            valid = false;
         }
     } else if (page === "findAPet.php") {
+        const temperment = activeForm.elements["temperment"];
         if (isEmpty(temperment.value)) {
             setError(temperment[0], "Temperment is Requiered");
+            valid = false;
         } else {
             setSuccess(temperment[0]);
         }
     }
-    
-
+    return valid;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
     const forms = document.forms;
-
     for (const element of forms) {
         // Skip the logout form
         if (element.className === "logout") {
             continue;
         }
         element.addEventListener("submit", e => {
-            if (validateFormInputs()) {
+            if (!validateFormInputs()) {
                 e.preventDefault()
             }
         });

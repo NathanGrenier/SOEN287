@@ -67,15 +67,15 @@ session_start();
                             <div class="vertical-items-container">
                               <div class="item">
                                 <label for="male_dog">Male</label>
-                                <input type="radio" id="male_dog" name="gender" value="male">
+                                <input type="radio" id="male_dog" name="gender" value="Male">
                               </div>
                               <div class="item">
                                 <label for="female_dog">Female</label>
-                                <input type="radio" id="female_dog" name="gender" value="female">
+                                <input type="radio" id="female_dog" name="gender" value="Female">
                               </div>
                               <div class="item">
                                 <label for="Dosen't_Matter_dog">Dosen't Matter</label>
-                                <input type="radio" id="Dosen't_Matter_dog" name="gender" value="dosen't matter">
+                                <input type="radio" id="Dosen't_Matter_dog" name="gender" value="Dosen't matter">
                               </div>
                               <div class="error"></div>
                             </div>  
@@ -139,15 +139,15 @@ session_start();
                             <h3>Preffered Gender:</h3>
                             <div class="item">
                               <label for="male_cat">Male</label>
-                              <input type="radio" id="male_cat" name="gender" value="male">
+                              <input type="radio" id="male_cat" name="gender" value="Male">
                             </div>
                             <div class="item">
                               <label for="female_cat">Female</label>
-                              <input type="radio" id="female_cat" name="gender" value="female">
+                              <input type="radio" id="female_cat" name="gender" value="Female">
                             </div>
                             <div class="item">
                               <label for="Dosen't_Matter_cat">Dosen't Matter</label>
-                              <input type="radio" id="Dosen't_Matter_cat" name="gender" value="dosen't matter">
+                              <input type="radio" id="Dosen't_Matter_cat" name="gender" value="Dosen't matter">
                             </div>
                             <div class="error"></div>
                           </div>  
